@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
+import { Helmet } from "react-helmet";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -63,6 +63,77 @@ const Contact = () => {
 
   return (
     <div className="bg-gray-50">
+      <Helmet>
+        <title>Contact Us - Get in Touch with QBS Accounting</title>
+
+        <meta
+          name="description"
+          content="Have questions or need support? Contact QBS Accounting to get expert assistance with accounting software and financial solutions for your small business."
+        />
+        <meta
+          name="keywords"
+          content="Contact QBS Accounting, accounting software support, customer service, small business finance help, accounting questions"
+        />
+        <meta name="author" content="QBS Accounting" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Contact Us - Get in Touch with QBS Accounting"
+        />
+        <meta
+          property="og:description"
+          content="Have questions or need support? Contact QBS Accounting to get expert assistance with accounting software and financial solutions for your small business."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://qbsaccounting.us/contact-us" />
+        <meta
+          property="og:image"
+          content="https://qbsaccounting.us/images/contact-us-banner.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Contact Us - Get in Touch with QBS Accounting"
+        />
+        <meta
+          name="twitter:description"
+          content="Have questions or need support? Contact QBS Accounting to get expert assistance with accounting software and financial solutions for your small business."
+        />
+        <meta
+          name="twitter:image"
+          content="https://qbsaccounting.us/images/contact-us-banner.jpg"
+        />
+        <meta name="twitter:site" content="@QBSAccounting" />
+
+        {/* Schema.org JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "url": "https://qbsaccounting.us/contact-us",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "QBS Accounting",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-123-456-7890",
+            "contactType": "Customer Service",
+            "email": "support@qbsaccounting.us",
+            "areaServed": "US"
+          }
+        },
+        "description": "Contact QBS Accounting for expert assistance with accounting software and financial solutions."
+      }
+    `}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative bg-teal-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

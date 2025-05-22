@@ -1,8 +1,81 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Partner = () => {
   return (
     <div className="bg-gray-50">
+      <Helmet>
+        <title>
+          Our Partners - Trusted Accounting Software Partners | QBS Accounting
+        </title>
+
+        <meta
+          name="description"
+          content="Meet our trusted partners providing top-notch accounting software and financial solutions to help your business thrive. Discover exclusive offers and integrations."
+        />
+        <meta
+          name="keywords"
+          content="accounting software partners, financial solutions, small business software, QuickBooks partners, accounting integrations, business finance partners"
+        />
+        <meta name="author" content="QBS Accounting" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="Our Partners - Trusted Accounting Software Partners | QBS Accounting"
+        />
+        <meta
+          property="og:description"
+          content="Meet our trusted partners providing top-notch accounting software and financial solutions to help your business thrive. Discover exclusive offers and integrations."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://qbsaccounting.us/our-partner"
+        />
+        <meta
+          property="og:image"
+          content="https://qbsaccounting.us/images/partners-banner.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Our Partners - Trusted Accounting Software Partners | QBS Accounting"
+        />
+        <meta
+          name="twitter:description"
+          content="Meet our trusted partners providing top-notch accounting software and financial solutions to help your business thrive. Discover exclusive offers and integrations."
+        />
+        <meta
+          name="twitter:image"
+          content="https://qbsaccounting.us/images/partners-banner.jpg"
+        />
+        <meta name="twitter:site" content="@QBSAccounting" />
+
+        {/* Schema.org JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "QBS Accounting",
+        "url": "https://qbsaccounting.us/our-partner",
+        "logo": "https://qbsaccounting.us/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/QBSAccounting",
+          "https://twitter.com/QBSAccounting",
+          "https://www.linkedin.com/company/qbsaccounting"
+        ],
+        "description": "QBS Accounting partners with leading accounting software providers to deliver the best financial tools and support for small businesses."
+      }
+    `}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-teal-800 to-teal-600 text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -96,14 +169,14 @@ const Partner = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {[
-              "Deloitte",
-              "PwC",
-              "EY",
-              "KPMG",
-              "SAP",
-              "Microsoft",
-              "Salesforce",
-              "Tally",
+              "Ruiz Foods",
+              "Eli Lilly",
+              "Chevron",
+              "BP Pulse",
+              "Cupix Inc.",
+              "Avride",
+              "Caterpillar",
+              "Grupo Bafar",
             ].map((partner) => (
               <div
                 key={partner}
@@ -114,28 +187,6 @@ const Partner = () => {
                 </span>
               </div>
             ))}
-          </div>
-
-          <div className="text-center">
-            <Link
-              to="/partner-showcase"
-              className="inline-flex items-center text-teal-600 font-medium hover:text-teal-800 text-lg"
-            >
-              View all partners
-              <svg
-                className="w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
-            </Link>
           </div>
         </div>
       </section>
@@ -264,32 +315,26 @@ const Partner = () => {
               {
                 title: "Partner Portal",
                 desc: "Access our exclusive partner portal with sales tools, marketing materials, and deal registration.",
-                link: "/partner-portal",
               },
               {
                 title: "Training & Certification",
                 desc: "Become a certified partner through our comprehensive training programs and webinars.",
-                link: "/partner-training",
               },
               {
                 title: "Marketing Toolkit",
                 desc: "Download ready-to-use marketing materials, case studies, and co-branded collateral.",
-                link: "/marketing-toolkit",
               },
               {
                 title: "Technical Documentation",
                 desc: "Access API documentation, integration guides, and technical specifications.",
-                link: "/technical-docs",
               },
               {
                 title: "Partner Events",
                 desc: "Join our partner conferences, workshops, and networking events.",
-                link: "/partner-events",
               },
               {
                 title: "Deal Registration",
                 desc: "Register your deals to receive special pricing and protection.",
-                link: "/deal-registration",
               },
             ].map((resource, index) => (
               <div
@@ -300,25 +345,6 @@ const Partner = () => {
                   {resource.title}
                 </h3>
                 <p className="text-gray-600 mb-6">{resource.desc}</p>
-                <Link
-                  to={resource.link}
-                  className="inline-flex items-center text-teal-600 font-medium hover:text-teal-800"
-                >
-                  Learn more
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    ></path>
-                  </svg>
-                </Link>
               </div>
             ))}
           </div>
@@ -341,7 +367,7 @@ const Partner = () => {
               </div>
               <div className="lg:w-1/3">
                 <Link
-                  to="/contact-partnerships"
+                  to="/contact-us"
                   className="block bg-white text-teal-700 text-center font-semibold py-4 px-8 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg"
                 >
                   Apply Now

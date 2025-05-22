@@ -1,8 +1,77 @@
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <div className="bg-gray-50">
+      <Helmet>
+        <title>
+          About Us - QBS Accounting | Your Trusted Accounting Software Experts
+        </title>
+
+        <meta
+          name="description"
+          content="Learn about QBS Accounting, our mission to empower small businesses with top accounting software and financial solutions. Discover our story, values, and team."
+        />
+        <meta
+          name="keywords"
+          content="About QBS Accounting, accounting software experts, financial solutions, small business accounting, company mission, our team"
+        />
+        <meta name="author" content="QBS Accounting" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="About Us - QBS Accounting | Your Trusted Accounting Software Experts"
+        />
+        <meta
+          property="og:description"
+          content="Learn about QBS Accounting, our mission to empower small businesses with top accounting software and financial solutions. Discover our story, values, and team."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://qbsaccounting.us/about-us" />
+        <meta
+          property="og:image"
+          content="https://qbsaccounting.us/images/about-us-banner.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About Us - QBS Accounting | Your Trusted Accounting Software Experts"
+        />
+        <meta
+          name="twitter:description"
+          content="Learn about QBS Accounting, our mission to empower small businesses with top accounting software and financial solutions. Discover our story, values, and team."
+        />
+        <meta
+          name="twitter:image"
+          content="https://qbsaccounting.us/images/about-us-banner.jpg"
+        />
+        <meta name="twitter:site" content="@QBSAccounting" />
+
+        {/* Schema.org JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "QBS Accounting",
+        "url": "https://qbsaccounting.us/about-us",
+        "logo": "https://qbsaccounting.us/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/QBSAccounting",
+          "https://twitter.com/QBSAccounting",
+          "https://www.linkedin.com/company/qbsaccounting"
+        ],
+        "description": "QBS Accounting is dedicated to providing small businesses with the best accounting software solutions, expert advice, and exceptional customer service to streamline financial management."
+      }
+    `}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-teal-800 to-teal-600 text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -28,7 +97,7 @@ const About = () => {
                 Pioneering Accounting Solutions Since 2010
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Founded in Mumbai by a team of chartered accountants and
+                Founded in New York by a team of chartered accountants and
                 software engineers, we set out to bridge the gap between
                 traditional accounting practices and modern technological
                 capabilities.
@@ -37,7 +106,7 @@ const About = () => {
                 What began as a small startup developing add-ons for existing
                 accounting platforms has grown into a leading provider of
                 comprehensive financial management solutions serving businesses
-                across 12 countries.
+                across the United States and beyond.
               </p>
               <div className="bg-teal-50 border-l-4 border-teal-500 p-4 mb-6">
                 <p className="text-teal-700 font-medium">
@@ -46,25 +115,6 @@ const About = () => {
                   in financial decision-making."
                 </p>
               </div>
-              <Link
-                to="/our-team"
-                className="inline-flex items-center text-teal-600 font-medium hover:text-teal-800 text-lg"
-              >
-                Meet Our Leadership Team
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M14 5l7 7m0 0l-7 7m7-7H3"
-                  ></path>
-                </svg>
-              </Link>
             </div>
             <div className="lg:w-1/2">
               <div className="grid grid-cols-2 gap-4">
@@ -85,7 +135,7 @@ const About = () => {
                         ></path>
                       </svg>
                       <p className="font-medium">Our First Office</p>
-                      <p className="text-sm mt-2">Mumbai, 2010</p>
+                      <p className="text-sm mt-2">New York, 2010</p>
                     </div>
                   </div>
                 </div>
@@ -148,7 +198,7 @@ const About = () => {
                         ></path>
                       </svg>
                       <p className="font-medium">Businesses Served</p>
-                      <p className="text-sm mt-2">15,000+ Worldwide</p>
+                      <p className="text-sm mt-2">15,000+ Nationwide</p>
                     </div>
                   </div>
                 </div>
@@ -389,27 +439,7 @@ const About = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Link
-              to="/our-team"
-              className="inline-flex items-center text-teal-600 font-medium hover:text-teal-800 text-lg"
-            >
-              View Full Team
-              <svg
-                className="w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
-              </svg>
-            </Link>
-          </div>
+          <div className="text-center mt-12"></div>
         </div>
       </section>
 

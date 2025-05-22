@@ -24,6 +24,7 @@ const Navbar = () => {
               QBS Accounting
             </a>
           </div>
+
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-4 items-center">
             <Link
@@ -33,6 +34,7 @@ const Navbar = () => {
               Home
             </Link>
 
+            {/* Dropdown opens on hover */}
             <div className="relative">
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -61,6 +63,7 @@ const Navbar = () => {
                     <Link
                       key={path}
                       to={path}
+                      onClick={() => setIsDropdownOpen(false)}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     >
                       {label}
@@ -90,6 +93,7 @@ const Navbar = () => {
             >
               Contact Us
             </Link>
+
             <Link
               to="/contact-us"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"

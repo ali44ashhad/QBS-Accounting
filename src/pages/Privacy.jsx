@@ -1,8 +1,75 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Privacy = () => {
   return (
     <div className="bg-gray-50">
+      <Helmet>
+        <title>Privacy Policy - QBS Accounting</title>
+
+        <meta
+          name="description"
+          content="Read the Privacy Policy of QBS Accounting to understand how we collect, use, and protect your personal information while using our website and services."
+        />
+        <meta
+          name="keywords"
+          content="Privacy Policy, data protection, user privacy, personal information, QBS Accounting privacy, GDPR compliance, data security"
+        />
+        <meta name="author" content="QBS Accounting" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Privacy Policy - QBS Accounting" />
+        <meta
+          property="og:description"
+          content="Read the Privacy Policy of QBS Accounting to understand how we collect, use, and protect your personal information while using our website and services."
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://qbsaccounting.us/privacy-policy"
+        />
+        <meta
+          property="og:image"
+          content="https://qbsaccounting.us/images/privacy-policy-banner.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Privacy Policy - QBS Accounting" />
+        <meta
+          name="twitter:description"
+          content="Read the Privacy Policy of QBS Accounting to understand how we collect, use, and protect your personal information while using our website and services."
+        />
+        <meta
+          name="twitter:image"
+          content="https://qbsaccounting.us/images/privacy-policy-banner.jpg"
+        />
+        <meta name="twitter:site" content="@QBSAccounting" />
+
+        {/* Schema.org JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Privacy Policy",
+        "url": "https://qbsaccounting.us/privacy-policy",
+        "description": "Read the Privacy Policy of QBS Accounting to understand how we collect, use, and protect your personal information while using our website and services.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "QBS Accounting",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://qbsaccounting.us/images/logo.png"
+          }
+        }
+      }
+    `}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-teal-800 to-teal-600 text-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

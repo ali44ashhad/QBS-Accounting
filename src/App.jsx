@@ -15,6 +15,7 @@ import PremierContractor from "./pages/PremierContractor";
 import Pro from "./pages/Pro";
 import Security from "./pages/Security";
 import Support from "./pages/Support";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <main className="min-h-screen bg-gray-50">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="*" element={<PageNotFound />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/terms-and-conditions" element={<Terms />} />

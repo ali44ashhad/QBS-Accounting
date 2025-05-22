@@ -1,9 +1,86 @@
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 const Home = () => {
   return (
     <div className="bg-gray-50">
       {/* Hero Section */}
+      <Helmet>
+        <title>
+          QBS Accounting - Best Accounting Software for Small Business
+        </title>
+
+        <meta
+          name="description"
+          content="Complete accounting software designed to streamline finances for small businesses and startups. Buy QuickBooks Pro 2023 or try the free 30-day trial."
+        />
+        <meta
+          name="keywords"
+          content="QuickBooks Pro, accounting software, small business accounting, invoice, payroll, tax preparation, bookkeeping software, financial management, accounting tools"
+        />
+        <meta name="author" content="Your Company Name" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph / Facebook */}
+        <meta
+          property="og:title"
+          content="QuickBooks Pro 2023 - Best Accounting Software for Small Business"
+        />
+        <meta
+          property="og:description"
+          content="Complete accounting software designed to streamline finances for small businesses and startups. Buy QuickBooks Pro 2023 or try the free 30-day trial."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://qbsaccounting.us" />
+        <meta
+          property="og:image"
+          content="https://qbsaccounting.us/images/quickbooks-pro-2023-banner.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="QuickBooks Pro 2023 - Best Accounting Software for Small Business"
+        />
+        <meta
+          name="twitter:description"
+          content="Complete accounting software designed to streamline finances for small businesses and startups. Buy QuickBooks Pro 2023 or try the free 30-day trial."
+        />
+        <meta
+          name="twitter:image"
+          content="https://qbsaccounting.us/images/quickbooks-pro-2023-banner.jpg"
+        />
+        <meta name="twitter:site" content="@YourTwitterHandle" />
+
+        {/* Schema.org JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "QuickBooks Pro 2023",
+        "operatingSystem": "Windows, MacOS",
+        "applicationCategory": "BusinessApplication",
+        "description": "Complete accounting software designed to streamline finances for small businesses and startups.",
+        "offers": {
+          "@type": "Offer",
+          "price": "299.99",
+          "priceCurrency": "USD",
+          "url": "https://qbsaccounting.us",
+          "availability": "https://schema.org/InStock"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Your Company Name"
+        },
+        "image": "https://qbsaccounting.us/images/quickbooks-pro-2023-banner.jpg",
+        "url": "https://qbsaccounting.us"
+      }
+    `}
+        </script>
+      </Helmet>
+
       <section className="relative bg-gradient-to-r from-teal-800 to-teal-600 text-white py-12 md:py-18 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="md:flex items-center justify-between">

@@ -368,7 +368,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -384,24 +383,18 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                name: "Rajiv Kapoor",
+                name: "Jatin Jain",
                 title: "Founder & CEO",
-                bio: "Former Big 4 accountant with 20+ years in financial software development",
+                bio: "Visionary founder with deep expertise in financial strategy and technology-driven accounting solutions.",
                 img: "",
               },
               {
-                name: "Priya Sharma",
-                title: "Chief Technology Officer",
-                bio: "Enterprise software architect specializing in accounting systems",
-                img: "",
-              },
-              {
-                name: "Amit Patel",
-                title: "VP of Product",
-                bio: "Product management expert focused on user experience in financial tools",
+                name: "Madhav Bansal",
+                title: "Chief Financial Officer (CFO)",
+                bio: "Expert in corporate finance and compliance, leading financial strategy and operations.",
                 img: "",
               },
             ].map((member, index) => (
@@ -438,8 +431,6 @@ const About = () => {
               </div>
             ))}
           </div>
-
-          <div className="text-center mt-12"></div>
         </div>
       </section>
 

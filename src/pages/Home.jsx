@@ -165,8 +165,8 @@ const Home = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { value: "95%", label: "Client Retention Rate" },
-              { value: "10M+", label: "Transactions Processed" },
-              { value: "4.9/5", label: "Customer Satisfaction" },
+              { value: "100K+", label: "Transactions Processed" },
+              { value: "4.5/5", label: "Customer Satisfaction" },
               { value: "24/7", label: "Support Availability" },
             ].map((stat, index) => (
               <div key={index} className="p-6">
@@ -496,7 +496,9 @@ const Home = () => {
           </div>
           <p className="mt-6 text-teal-200">
             Questions? Call our experts at{" "}
-            <span className="font-semibold">+91 98765 43210</span>
+            <a href="tel:+13074434600" className="font-semibold underline">
+              +1 (307) 443-4600
+            </a>
           </p>
         </div>
       </section>

@@ -98,12 +98,10 @@ const Privacy = () => {
                     1. Introduction
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    [Your Company Name] ("we", "us", or "our") operates the
-                    [Your Product Name] accounting software (the "Service").
-                    This page informs you of our policies regarding the
-                    collection, use, and disclosure of personal data when you
-                    use our Service and the choices you have associated with
-                    that data.
+                    QBS Accounting operates accounting software. This page
+                    informs you of our policies regarding the collection, use,
+                    and disclosure of personal data when you use our Service and
+                    the choices you have associated with that data.
                   </p>
                   <p className="text-gray-700">
                     We use your data to provide and improve the Service. By
@@ -125,8 +123,8 @@ const Privacy = () => {
                   <p className="text-gray-700 mb-4">
                     While using our Service, we may ask you to provide us with
                     certain personally identifiable information that can be used
-                    to contact or identify you ("Personal Data"). Personally
-                    identifiable information may include, but is not limited to:
+                    to contact or identify you . Personally identifiable
+                    information may include, but is not limited to:
                   </p>
                   <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700">
                     <li>Email address</li>
@@ -142,12 +140,12 @@ const Privacy = () => {
                   </h3>
                   <p className="text-gray-700 mb-4">
                     We may also collect information on how the Service is
-                    accessed and used ("Usage Data"). This Usage Data may
-                    include information such as your computer's Internet
-                    Protocol address (e.g., IP address), browser type, browser
-                    version, the pages of our Service that you visit, the time
-                    and date of your visit, the time spent on those pages,
-                    unique device identifiers and other diagnostic data.
+                    accessed and used. This Usage Data may include information
+                    such as your computer's Internet Protocol address , browser
+                    type, browser version, the pages of our Service that you
+                    visit, the time and date of your visit, the time spent on
+                    those pages, unique device identifiers and other diagnostic
+                    data.
                   </p>
 
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -169,8 +167,7 @@ const Privacy = () => {
                     3. Use of Data
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    [Your Company Name] uses the collected data for various
-                    purposes:
+                    QBS Accounting uses the collected data for various purposes:
                   </p>
                   <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700">
                     <li>To provide and maintain our Service</li>
@@ -259,18 +256,18 @@ const Privacy = () => {
                     5.2 Business Transfers
                   </h3>
                   <p className="text-gray-700 mb-4">
-                    If [Your Company Name] is involved in a merger, acquisition
-                    or asset sale, your Personal Data may be transferred. We
-                    will provide notice before your Personal Data is transferred
-                    and becomes subject to a different Privacy Policy.
+                    If QBS Accounting is involved in a merger, acquisition or
+                    asset sale, your Personal Data may be transferred. We will
+                    provide notice before your Personal Data is transferred and
+                    becomes subject to a different Privacy Policy.
                   </p>
 
                   <h3 className="text-xl font-semibold text-gray-800 mb-3">
                     5.3 Legal Requirements
                   </h3>
                   <p className="text-gray-700">
-                    [Your Company Name] may disclose your Personal Data in the
-                    good faith belief that such action is necessary to:
+                    QBS Accounting may disclose your Personal Data in the good
+                    faith belief that such action is necessary to:
                   </p>
                   <ul className="list-disc pl-6 mt-2 space-y-2 text-gray-700">
                     <li>Comply with a legal obligation</li>
@@ -347,12 +344,12 @@ const Privacy = () => {
                     differ than those from your jurisdiction.
                   </p>
                   <p className="text-gray-700">
-                    If you are located outside [Your Country] and choose to
-                    provide information to us, please note that we transfer the
-                    data, including Personal Data, to [Your Country] and process
-                    it there. Your consent to this Privacy Policy followed by
-                    your submission of such information represents your
-                    agreement to that transfer.
+                    If you are located outside United State of America and
+                    choose to provide information to us, please note that we
+                    transfer the data, including Personal Data, to United State
+                    of America and process it there. Your consent to this
+                    Privacy Policy followed by your submission of such
+                    information represents your agreement to that transfer.
                   </p>
                 </div>
 
@@ -361,12 +358,11 @@ const Privacy = () => {
                     8. Children's Privacy
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    Our Service does not address anyone under the age of 18
-                    ("Children"). We do not knowingly collect personally
-                    identifiable information from anyone under the age of 18. If
-                    you are a parent or guardian and you are aware that your
-                    Children has provided us with Personal Data, please contact
-                    us.
+                    Our Service does not address anyone under the age of 18 . We
+                    do not knowingly collect personally identifiable information
+                    from anyone under the age of 18. If you are a parent or
+                    guardian and you are aware that your Children has provided
+                    us with Personal Data, please contact us.
                   </p>
                   <p className="text-gray-700">
                     If we become aware that we have collected Personal Data from
@@ -401,11 +397,12 @@ const Privacy = () => {
                     contact us:
                   </p>
                   <address className="not-italic text-gray-700">
-                    By email: privacy@yourcompany.com
+                    By email: info@qbsaccounting.us
                     <br />
-                    By phone: [Your Contact Number]
+                    By phone: +1 (307) 443-4600
                     <br />
-                    By mail: [Your Company Address], Attn: Privacy Officer
+                    By mail: 30 N Gould St Ste R. Sheridan, WY 82801, Attn:
+                    Privacy Officer
                   </address>
                 </div>
               </div>
@@ -441,7 +438,7 @@ const Privacy = () => {
               Contact Privacy Team
             </Link>
             <Link
-              to="/data-request"
+              to="/"
               className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300"
             >
               Submit Data Request

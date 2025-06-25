@@ -293,14 +293,19 @@ const Contact = () => {
                       <h3 className="text-lg font-medium text-gray-900">
                         Phone Support
                       </h3>
-                      <p className="text-gray-600">+1 (800) 123-4567</p>
+                      <a
+                        href="tel:+13074434600"
+                        className="text-gray-600 hover:underline"
+                      >
+                        +1 (307) 443-4600
+                      </a>
                       <p className="text-gray-500 text-sm">
                         Monday-Friday, 8am-6pm EST
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex">
+                  <div className="flex mt-6">
                     <div className="flex-shrink-0">
                       <div className="flex items-center justify-center h-12 w-12 rounded-md bg-teal-100 text-teal-600">
                         <svg
@@ -322,9 +327,12 @@ const Contact = () => {
                       <h3 className="text-lg font-medium text-gray-900">
                         Email Us
                       </h3>
-                      <p className="text-gray-600">
-                        info@accountingsolutions.com
-                      </p>
+                      <a
+                        href="mailto:info@qbsaccounting.us"
+                        className="text-gray-600 hover:underline"
+                      >
+                        info@qbsaccounting.us
+                      </a>
                       <p className="text-gray-500 text-sm">
                         Typically responds within 24 hours
                       </p>
@@ -359,8 +367,8 @@ const Contact = () => {
                       <h3 className="text-lg font-medium text-gray-900">
                         Our Office
                       </h3>
-                      <p className="text-gray-600">123 Accounting Street</p>
-                      <p className="text-gray-600">Finance City, FC 12345</p>
+                      <p className="text-gray-600">30 N Gould St Ste </p>
+                      <p className="text-gray-600">R. Sheridan, WY 82801</p>
                       <p className="text-gray-500 text-sm">
                         Open Monday-Friday, 9am-5pm
                       </p>
@@ -470,7 +478,7 @@ const Contact = () => {
               Visit Support Center
             </Link>
             <a
-              href="tel:+912212345678"
+              href="tel:+1 (307) 443-4600"
               className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300"
             >
               Call Us Now

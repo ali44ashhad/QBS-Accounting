@@ -90,10 +90,20 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <address className="not-italic text-gray-300">
-              <p>123 Accounting Street</p>
-              <p>Finance City, FC 12345</p>
-              <p className="mt-2">Email: info@qbsaccounting.us</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>30 N Gould St Ste </p>
+              <p>R. Sheridan, WY 82801</p>
+              <p className="mt-2">
+                Email:{" "}
+                <a href="mailto:info@qbsaccounting.us" className=" underline">
+                  info@qbsaccounting.us
+                </a>
+              </p>
+              <p>
+                Phone:{" "}
+                <a href="tel:+13074434600" className=" underline">
+                  +1 (307) 443-4600
+                </a>
+              </p>
             </address>
           </div>
         </div>

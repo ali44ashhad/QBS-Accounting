@@ -262,12 +262,12 @@ const Support = () => {
                 </li>
               </ul>
               <div className="text-center">
-                <p className="text-lg font-bold text-gray-900 mb-2">
-                  +1 (800) 123-4567
-                </p>
-                <p className="text-sm text-gray-600">
-                  International: +91 22 1234 5678
-                </p>
+                <a
+                  href="tel:+13074434600"
+                  className="text-lg font-bold text-gray-900 mb-2 hover:underline"
+                >
+                  +1 (307) 443-4600
+                </a>
               </div>
             </div>
 
@@ -593,7 +593,7 @@ const Support = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="tel:+18001234567"
+              href="tel:   +1 (307) 443-4600"
               className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg"
             >
               Call Support Now

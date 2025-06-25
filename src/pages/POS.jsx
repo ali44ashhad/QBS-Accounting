@@ -580,13 +580,17 @@ const POS = () => {
             >
               Contact Sales
             </Link> */}
-            <button className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300">
-              Contact Sales
-            </button>
+            <a href="tel:+13074434600">
+              <button className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300">
+                Contact Sales:
+              </button>
+            </a>
           </div>
-          <p className="mt-6 text-teal-200">
+          <p className="mt-6 text-teal-50">
             Have questions? Call our retail specialists at{" "}
-            <span className="font-semibold">+91 98765 43210</span>
+            <a href="tel:+13074434600" className="font-semibold ">
+              +1 (307) 443-4600
+            </a>
           </p>
         </div>
       </section>

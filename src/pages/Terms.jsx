@@ -104,11 +104,9 @@ const Terms = () => {
                     1. Introduction
                   </h2>
                   <p className="text-gray-700 mb-4">
-                    These Terms and Conditions ("Terms") govern your use of our
-                    accounting software services ("Services") provided by [Your
-                    Company Name] ("Company", "we", "us", or "our"). By
-                    accessing or using our Services, you agree to be bound by
-                    these Terms.
+                    These Terms and Conditions govern your use of our accounting
+                    software services provided by QBS Accounting. By accessing
+                    or using our Services, you agree to be bound by these Terms.
                   </p>
                   <p className="text-gray-700">
                     If you are entering into these Terms on behalf of a company
@@ -149,7 +147,7 @@ const Terms = () => {
                     </li>
                   </ul>
                   <p className="text-gray-700">
-                    Accounts registered by "bots" or other automated methods are
+                    Accounts registered by or other automated methods are
                     prohibited. We reserve the right to refuse service,
                     terminate accounts, or remove/edit content at our sole
                     discretion.
@@ -243,8 +241,8 @@ const Terms = () => {
                   </h3>
                   <p className="text-gray-700 mb-4">
                     You retain all rights to any data you input into the
-                    Services ("Your Data"). You grant us a worldwide license to
-                    use, reproduce, and process Your Data solely to provide and
+                    Services . You grant us a worldwide license to use,
+                    reproduce, and process Your Data solely to provide and
                     improve the Services.
                   </p>
 
@@ -349,15 +347,18 @@ const Terms = () => {
                     us at:
                   </p>
                   <address className="not-italic text-gray-700">
-                    [Your Company Name]
+                    QBS Accounting
                     <br />
-                    [Company Address]
+                    30 N Gould St Ste R. Sheridan, WY 82801
                     <br />
-                    [City, State ZIP Code]
+                    Email: info@qbsaccounting.us
                     <br />
-                    Email: legal@yourcompany.com
-                    <br />
-                    Phone: [Phone Number]
+                    <p className="">
+                      Phone:{" "}
+                      <a href="tel:+13074434600" className="font-semibold">
+                        +1 (307) 443-4600
+                      </a>
+                    </p>
                   </address>
                 </div>
               </div>

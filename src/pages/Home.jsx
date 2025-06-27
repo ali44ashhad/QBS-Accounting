@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+
 const Home = () => {
   return (
     <div className="bg-gray-50">
@@ -8,7 +9,6 @@ const Home = () => {
         <title>
           QBS Accounting - Best Accounting Software for Small Business
         </title>
-
         <meta
           name="description"
           content="Complete accounting software designed to streamline finances for small businesses and startups. Buy QuickBooks Pro 2023 or try the free 30-day trial."
@@ -56,28 +56,28 @@ const Home = () => {
         {/* Schema.org JSON-LD Structured Data */}
         <script type="application/ld+json">
           {`
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "QuickBooks Pro 2023",
-        "operatingSystem": "Windows, MacOS",
-        "applicationCategory": "BusinessApplication",
-        "description": "Complete accounting software designed to streamline finances for small businesses and startups.",
-        "offers": {
-          "@type": "Offer",
-          "price": "299.99",
-          "priceCurrency": "USD",
-          "url": "https://qbsaccounting.us",
-          "availability": "https://schema.org/InStock"
-        },
-        "author": {
-          "@type": "Organization",
-          "name": "Your Company Name"
-        },
-        "image": "https://qbsaccounting.us/images/quickbooks-pro-2023-banner.jpg",
-        "url": "https://qbsaccounting.us"
-      }
-    `}
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "QuickBooks Pro 2023",
+              "operatingSystem": "Windows, MacOS",
+              "applicationCategory": "BusinessApplication",
+              "description": "Complete accounting software designed to streamline finances for small businesses and startups.",
+              "offers": {
+                "@type": "Offer",
+                "price": "299.99",
+                "priceCurrency": "USD",
+                "url": "https://qbsaccounting.us",
+                "availability": "https://schema.org/InStock"
+              },
+              "author": {
+                "@type": "Organization",
+                "name": "Your Company Name"
+              },
+              "image": "https://qbsaccounting.us/images/quickbooks-pro-2023-banner.jpg",
+              "url": "https://qbsaccounting.us"
+            }
+          `}
         </script>
       </Helmet>
 
@@ -159,7 +159,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Stats Section - New */}
+      {/* Stats Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -179,10 +179,12 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Solutions Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">
+            <span className="text-teal-800 font-semibold text-sm uppercase tracking-wider">
               Solutions
             </span>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
@@ -250,9 +252,9 @@ const Home = () => {
                 <p className="text-gray-600 mb-6">{solution.desc}</p>
                 <Link
                   to={solution.link}
-                  className="text-teal-600 font-medium hover:text-teal-800 inline-flex items-center"
+                  className="text-teal-700 font-medium hover:text-teal-900 inline-flex items-center"
                 >
-                  Learn more
+                  Explore {solution.title}
                   <svg
                     className="w-4 h-4 ml-1"
                     fill="none"
@@ -273,7 +275,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Product Showcase - New */}
+      {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:flex items-center gap-12">
@@ -285,7 +287,7 @@ const Home = () => {
               />
             </div>
             <div className="lg:w-1/2">
-              <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">
+              <span className="text-teal-800 font-semibold text-sm uppercase tracking-wider">
                 Features
               </span>
               <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-6">
@@ -341,7 +343,7 @@ const Home = () => {
 
               <Link
                 to="/quickbooks-pro"
-                className="mt-8 inline-flex items-center text-teal-600 font-medium hover:text-teal-800"
+                className="mt-8 inline-flex items-center text-teal-700 font-medium hover:text-teal-900"
               >
                 See all features
                 <svg
@@ -363,11 +365,11 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Integration Section - New */}
+      {/* Integration Section */}
       <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">
+            <span className="text-teal-800 font-semibold text-sm uppercase tracking-wider">
               Connectivity
             </span>
             <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-4">
@@ -404,7 +406,7 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">
+            <span className="text-teal-800 font-semibold text-sm uppercase tracking-wider">
               Testimonials
             </span>
             <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-4">
@@ -496,7 +498,7 @@ const Home = () => {
           </div>
           <p className="mt-6 text-teal-200">
             Questions? Call our experts at{" "}
-            <a href="tel:+13074434600" className="font-semibold underline">
+            <a href="tel:+13074434600" className="font-semibold">
               +1 (307) 443-4600
             </a>
           </p>

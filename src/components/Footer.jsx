@@ -94,15 +94,10 @@ const Footer = () => {
               <p>R. Sheridan, WY 82801</p>
               <p className="mt-2">
                 Email:{" "}
-                <a href="mailto:info@qbsaccounting.us" className=" underline">
-                  info@qbsaccounting.us
-                </a>
+                <a href="mailto:info@qbsaccounting.us">info@qbsaccounting.us</a>
               </p>
               <p>
-                Phone:{" "}
-                <a href="tel:+13074434600" className=" underline">
-                  +1 (307) 443-4600
-                </a>
+                Phone: <a href="tel:+13074434600">+1 (307) 443-4600</a>
               </p>
             </address>
           </div>

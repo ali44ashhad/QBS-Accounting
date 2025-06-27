@@ -96,7 +96,7 @@ const Navbar = () => {
 
             <Link
               to="/contact-us"
-              className="inline-flex items-center justify-center px-4 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-lg font-medium text-sm"
+              className="inline-flex items-center justify-center px-4 py-3 bg-teal-700 hover:bg-teal-800 text-white rounded-lg font-medium text-sm"
             >
               <svg
                 className="w-5 h-5 mr-2"
@@ -147,26 +147,25 @@ const Navbar = () => {
       >
         <div className="p-4 pt-7 space-y-4">
           {/* Close button */}
-          <div className="flex justify-end">
-            <button
-              className="text-gray-500 hover:text-gray-700"
-              onClick={() => setIsMobileMenuOpen(false)}
+          <button
+            className="text-gray-500 hover:text-gray-700"
+            onClick={() => setIsMobileMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
 
           <Link
             to="/"

@@ -270,7 +270,7 @@ const Partner = () => {
                   <div className="flex items-center">
                     <div className="h-12 w-12 rounded-full bg-gray-300 mr-4"></div>
                     <div>
-                      <p className="font-medium text-gray-900">Rahul Sharma</p>
+                      <p className="font-medium text-gray-900">Liam Anderson</p>
                       <p className="text-gray-600">
                         Director, Financial Solutions Consulting
                       </p>

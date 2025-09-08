@@ -91,25 +91,19 @@ const Accountant = () => {
             streamline workflows and enhance client services
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            {/* <Link
-              to="/free-trial"
+            <Link
+              to="/contact-us"
               className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg"
             >
               Start Free Trial
-            </Link> */}
-            <button className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg ">
-              {" "}
-              Start Free Trial
-            </button>
-            {/* <Link
-              to="/contact-sales"
+            </Link>
+
+            <Link
+              to="/contact-us"
               className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300"
             >
               Request Demo
-            </Link> */}
-            <button className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300">
-              Request Demo
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -500,24 +494,19 @@ const Accountant = () => {
             Accountant to streamline their workflows and grow their firms.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            {/* <Link
-              to="/free-trial"
+            <Link
+              to="/contact-us"
               className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg"
             >
               Start 30-Day Free Trial
-            </Link> */}
-            <button className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">
-              Start 30-Day Free Trial
-            </button>
-            {/* <Link
-              to="/contact-sales"
+            </Link>
+
+            <Link
+              to="/contact-us"
               className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300"
             >
               Schedule Consultation
-            </Link> */}
-            <button className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300">
-              Schedule Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </section>

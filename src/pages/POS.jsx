@@ -103,25 +103,19 @@ const POS = () => {
                 QuickBooks for end-to-end business management.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                {/* <Link
-                  to="/buy-now"
+                <Link
+                  to="/contact-us"
                   className="bg-white text-teal-800 font-semibold px-8 py-3 rounded-md text-center hover:bg-gray-100 transition duration-300 shadow-lg"
                 >
                   Get Started
-                </Link> */}
-                <button className="bg-white text-teal-800 font-semibold px-8 py-3 rounded-md text-center hover:bg-gray-100 transition duration-300 shadow-lg">
-                  {" "}
-                  Get Started
-                </button>
-                {/* <Link
-                  to="/free-trial"
+                </Link>
+
+                <Link
+                  to="/contact-us"
                   className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md text-center hover:bg-white hover:text-teal-800 transition duration-300"
                 >
                   Free Demo
-                </Link> */}
-                <button className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md text-center hover:bg-white hover:text-teal-800 transition duration-300">
-                  Free Demo
-                </button>
+                </Link>
               </div>
               <div className="mt-8 flex items-center">
                 <div className="flex -space-x-2">
@@ -565,21 +559,13 @@ const POS = () => {
             Get started with the POS system designed to grow with your business.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            {/* <Link
-              to="/free-trial"
+            <Link
+              to="/contact-us"
               className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg"
             >
               Start Free Trial
-            </Link> */}
-            <button className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">
-              Start Free Trial
-            </button>
-            {/* <Link
-              to="/contact"
-              className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300"
-            >
-              Contact Sales
-            </Link> */}
+            </Link>
+
             <a href="tel:+13074434600">
               <button className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300">
                 Contact Sales:

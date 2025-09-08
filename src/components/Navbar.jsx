@@ -117,7 +117,7 @@ const Navbar = () => {
 
           <button
             onClick={() => setIsMobileMenuOpen(true)}
-            className="text-gray-700 hover:text-blue-600 focus:outline-none"
+            className="text-gray-700 md:hidden hover:text-blue-600 focus:outline-none"
             aria-label="Open mobile menu"
             title="Open mobile menu"
           >

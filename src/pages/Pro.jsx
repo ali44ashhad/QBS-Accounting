@@ -103,25 +103,19 @@ const Pro = () => {
                 small businesses and startups.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                {/* <Link
-                  to="/buy-now"
+                <Link
+                  to="/contact-us"
                   className="bg-white text-teal-800 font-semibold px-8 py-3 rounded-md text-center hover:bg-gray-100 transition duration-300 shadow-lg"
                 >
                   Buy Now
-                </Link> */}
-                <button className="bg-white text-teal-800 font-semibold px-8 py-3 rounded-md text-center hover:bg-gray-100 transition duration-300 shadow-lg">
-                  Buy Now
-                </button>
-                {/* <Link
-                  to="/free-trial"
+                </Link>
+
+                <Link
+                  to="/contact-us"
                   className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md text-center hover:bg-white hover:text-teal-800 transition duration-300"
                 >
                   Free 30-Day Trial
-                </Link> */}
-                <button className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md text-center hover:bg-white hover:text-teal-800 transition duration-300">
-                  {" "}
-                  Free 30-Day Trial
-                </button>
+                </Link>
               </div>
               <div className="mt-8 flex items-center">
                 <div className="flex -space-x-2">
@@ -542,24 +536,19 @@ const Pro = () => {
             gain financial clarity.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            {/* <Link
-              to="/buy-now"
+            <Link
+              to="/contact-us"
               className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg"
             >
               Buy Now
-            </Link> */}
-            <button className="bg-white text-teal-700 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 shadow-lg">
-              Buy Now
-            </button>
-            {/* <Link
-              to="/free-trial"
+            </Link>
+
+            <Link
+              to="/contact-us"
               className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300"
             >
               Start Free Trial
-            </Link> */}
-            <button className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300">
-              Start Free Trial
-            </button>
+            </Link>
           </div>
           <p className="mt-6 text-teal-200">
             Have questions? Call our experts at{" "}

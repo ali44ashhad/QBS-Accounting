@@ -419,8 +419,10 @@ const Home = () => {
               <div className="flex items-center mb-6">
                 <div className="h-16 w-16 rounded-full bg-gray-300 mr-6"></div>
                 <div>
-                  <p className="font-bold text-gray-900">Priya Sharma</p>
-                  <p className="text-gray-600">CFO, TechStart India</p>
+                  <p className="font-bold text-gray-900">Emma Robinson</p>
+                  <p className="text-gray-600">
+                    Chief Marketing Officer at FutureWave Inc.
+                  </p>
                 </div>
               </div>
               <blockquote className="text-lg text-gray-700">
@@ -446,8 +448,10 @@ const Home = () => {
               <div className="flex items-center mb-6">
                 <div className="h-16 w-16 rounded-full bg-gray-300 mr-6"></div>
                 <div>
-                  <p className="font-bold text-gray-900">Rahul Mehta</p>
-                  <p className="text-gray-600">Partner, Mehta & Associates</p>
+                  <p className="font-bold text-gray-900">Jackson Miller</p>
+                  <p className="text-gray-600">
+                    Chief Financial Officer at Summit Capital Partners
+                  </p>
                 </div>
               </div>
               <blockquote className="text-lg text-gray-700">

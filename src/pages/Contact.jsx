@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Helmet } from "react-helmet";
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const formRef = useRef();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,6 +20,41 @@ const Contact = () => {
       ...prev,
       [name]: value,
     }));
+  };
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_n858u24",
+        "template_zjr9xc5",
+        formRef.current,
+        "CSgQWNECMUMG1ylRv"
+      )
+      .then(
+        (result) => {
+          console.log("✅ Email sent successfully:", result.text);
+          alert("Thank you for your message! We will contact you soon.");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("❌ Error sending email:", error.text);
+          alert("Something went wrong. Please try again.");
+        }
+      );
   };
 
   const faqData = [
@@ -42,30 +80,10 @@ const Contact = () => {
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! We will contact you soon.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
-  };
-
   return (
     <div className="bg-gray-50">
       <Helmet>
         <title>Contact Us - Get in Touch with QBS Accounting</title>
-
         <meta
           name="description"
           content="Have questions or need support? Contact QBS Accounting to get expert assistance with accounting software and financial solutions for your small business."
@@ -77,61 +95,6 @@ const Contact = () => {
         <meta name="author" content="QBS Accounting" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Open Graph / Facebook */}
-        <meta
-          property="og:title"
-          content="Contact Us - Get in Touch with QBS Accounting"
-        />
-        <meta
-          property="og:description"
-          content="Have questions or need support? Contact QBS Accounting to get expert assistance with accounting software and financial solutions for your small business."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://qbsaccounting.us/contact-us" />
-        <meta
-          property="og:image"
-          content="https://qbsaccounting.us/images/contact-us-banner.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Contact Us - Get in Touch with QBS Accounting"
-        />
-        <meta
-          name="twitter:description"
-          content="Have questions or need support? Contact QBS Accounting to get expert assistance with accounting software and financial solutions for your small business."
-        />
-        <meta
-          name="twitter:image"
-          content="https://qbsaccounting.us/images/contact-us-banner.jpg"
-        />
-        <meta name="twitter:site" content="@QBSAccounting" />
-
-        {/* Schema.org JSON-LD Structured Data */}
-        <script type="application/ld+json">
-          {`
-      {
-        "@context": "https://schema.org",
-        "@type": "ContactPage",
-        "url": "https://qbsaccounting.us/contact-us",
-        "mainEntity": {
-          "@type": "Organization",
-          "name": "QBS Accounting",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-123-456-7890",
-            "contactType": "Customer Service",
-            "email": "support@qbsaccounting.us",
-            "areaServed": "US"
-          }
-        },
-        "description": "Contact QBS Accounting for expert assistance with accounting software and financial solutions."
-      }
-    `}
-        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -157,7 +120,7 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   Send Us a Message
                 </h2>
-                <form onSubmit={handleSubmit}>
+                <form ref={formRef} onSubmit={handleSubmit}>
                   <div className="mb-6">
                     <label
                       htmlFor="name"
@@ -262,8 +225,6 @@ const Contact = () => {
                 </form>
               </div>
             </div>
-
-            {/* Contact Info */}
             <div className="lg:w-1/2">
               <div className="bg-white p-8 rounded-lg shadow-md h-full">
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
@@ -417,7 +378,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>{" "}
           </div>
         </div>
       </section>
@@ -478,7 +439,7 @@ const Contact = () => {
               Visit Support Center
             </Link>
             <a
-              href="tel:+1 (307) 443-4600"
+              href="tel:+13074434600"
               className="bg-transparent border-2 border-white font-semibold px-8 py-3 rounded-md hover:bg-white hover:text-teal-700 transition duration-300"
             >
               Call Us Now

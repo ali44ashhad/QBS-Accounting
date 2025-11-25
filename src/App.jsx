@@ -36,7 +36,8 @@ import TermsSecond from "./pages/QBSpages/TermsSecond.jsx";
 function App() {
 
   const {pathname} = useLocation()
-  const hideNavbarOn = ["/services", "/authenticity", "/contact-second", "/downloads", "/faqs", "/privacy-policy-second", "/products", "/qbs-certified", "/refund-policy", "/about-second"]
+  const hideNavbarOn = ["/services", "/authenticity", "/contact-us-second", "/downloads", "/faqs", "/privacy-policy-second", "/product", "terms-conditions", "/qbs-certified", "/refund-policy", "/about-second"]
+  const hideFooterOn = ["/services", "/authenticity", "/contact-us-second", "/downloads", "/faqs", "/privacy-policy-second", "/product", "terms-conditions", "/qbs-certified", "/refund-policy", "/about-second"]
 
   return (
     <>
@@ -81,7 +82,7 @@ function App() {
 
         </Routes>
       </main>
-      {/* {!hideFooterOn.includes(pathname) && <Footer/>} */}
+      {!hideFooterOn.includes(pathname) && <Footer/>}
 
 
     </>

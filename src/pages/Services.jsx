@@ -5,6 +5,9 @@ import { Phone, LineChart } from 'lucide-react'
 import HomeFurtherSection from './HomeFurtherSection'
 import SecondNavbar from '../components/SecondNavbar'
 import SecondFooter from '../components/SecondFooter'
+import { Link }from 'react-router-dom'
+
+
 
 const Services = () => {
   return (
@@ -35,13 +38,13 @@ const Services = () => {
               Automate invoicing, reconcile bank transactions in seconds, and get clear insights to scale confidently. Try our guided setup and experience bookkeeping that actually helps you run your business.
             </p>
 
-            <a
-              href="tel:+18001234567"
+            <Link
+              to="/contact-us-second"
               className="inline-flex items-center justify-center gap-3 bg-[#0b6b3b] hover:bg-green-700 transition-all duration-300 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg"
             >
               <Phone className="h-5 w-5" />
               Talk to a specialist: 1-888-339-8581
-            </a>
+            </Link>
           </div>
         </section>
       </div>
@@ -50,7 +53,7 @@ const Services = () => {
       <section className="w-full bg-gradient-to-r from-gray-50 to-gray-100 py-12 text-center px-6 lg:px-20">
         <h2 className="text-2xl lg:text-3xl font-bold mb-2">Questions about migration or payroll?</h2>
         <p className="text-gray-700 mb-6">Schedule a free 15-minute audit and we'll recommend the simplest path forward.</p>
-        <a href="/book-audit" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-3 rounded-md transition">Book free audit</a>
+        <Link to="/contact-us-second" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-3 rounded-md transition">Book free audit</Link >
       </section>
 
       {/* Section 3 - Support Callout (Alternative) */}
@@ -59,9 +62,9 @@ const Services = () => {
         <div className="lg:w-1/2 w-full text-center lg:text-left mb-8 lg:mb-0">
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">Troubleshooting or data recovery?</h2>
           <p className="text-gray-700 mb-6">Our certified advisors recover files, fix sync issues, and secure your books quickly.</p>
-          <a href="tel:+18007654321" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg inline-block transition-colors duration-300">
+          <Link to="/contact-us-second" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg inline-block transition-colors duration-300">
             📞 Support: 1-888-339-8581
-          </a>
+          </Link>
         </div>
 
         {/* Right Circular Image */}
@@ -90,10 +93,10 @@ const Services = () => {
               <li>Custom reporting and KPI dashboards</li>
             </ul>
 
-            <a href="tel:+18881234567" className="inline-flex items-center justify-center bg-green-700 hover:bg-green-600 transition-colors text-white text-lg font-bold py-3 px-6 rounded-full self-center lg:self-start max-w-xs w-full sm:w-auto">
+            <Link to="/contact-us-second" className="inline-flex items-center justify-center bg-green-700 hover:bg-green-600 transition-colors text-white text-lg font-bold py-3 px-6 rounded-full self-center lg:self-start max-w-xs w-full sm:w-auto">
               <Phone className="mr-3 h-5 w-5" />
               Call: 1-888-339-8581
-            </a>
+            </Link>
           </div>
         </div>
       </div>

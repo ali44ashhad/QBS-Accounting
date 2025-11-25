@@ -1,0 +1,66 @@
+import React from 'react'
+import SecondFooter from '../../components/SecondFooter'
+import SecondNavbar from '../../components/SecondNavbar'
+
+const Authenticity = () => {
+  return (
+   <>
+   <SecondNavbar/>
+     <div>
+
+        <div className="max-w-7xl mx-auto p-8 pt-30">
+      {/* Main Heading */}
+      <h2 className="text-3xl font-bold mb-10 text-gray-800">
+       Authenticity
+      </h2>
+      
+      {/* Section 1: Data Access */}
+      <div className="mb-12">
+        <h3 className="text-xl font-semibold mb-4 text-gray-700">
+          Data Retrieval
+        </h3>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          All user data is securely managed by our central API service. If you lose access credentials and have a verified account, you can always recover your information online. Visit your <a 
+          href="#" 
+          className="text-blue-600 hover:text-blue-800 underline transition duration-150 ease-in-out"
+          >
+          account credentials dashboard</a> to reset your password and retrieve your API key. If you haven't verified your account, use the <a 
+          href="#" 
+          className="text-blue-600 hover:text-blue-800 underline transition duration-150 ease-in-out"
+          >
+          Key Recovery Tool</a>.
+        </p>
+      </div>
+
+      {/* Horizontal Rule for separation */}
+      <hr className="my-8 border-gray-200" />
+      
+      {/* Section 2: Technical Support */}
+      <div>
+        <h3 className="text-xl font-semibold mb-4 text-gray-700">
+          Technical Assistance
+        </h3>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          All premium software licenses purchased from <a 
+          href="#" 
+          className="text-blue-600 hover:text-blue-800 underline transition duration-150 ease-in-out"
+          >
+          officialpartners.com</a> are fully supported by our Dev Support Team. Please note that **priority support** is available for **Platinum** and **Gold** tier subscriptions. Other plans come with standard support (mostly deployment-related issues). Advanced support can be secured by upgrading to an Enterprise subscription.
+        </p>
+        <p className="text-gray-600 leading-relaxed">
+          You can also request more information by emailing us at 
+          <a 
+          href="mailto:support@techsolution.dev" 
+          className="text-blue-600 hover:text-blue-800 underline transition duration-150 ease-in-out"
+          >
+          support@techsolution.dev</a>
+        </p>
+      </div>
+    </div>
+    </div>
+    <SecondFooter/>
+   </>
+  )
+}
+
+export default Authenticity

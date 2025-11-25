@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useLocation } from 'react-router-dom'
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -15,17 +16,38 @@ import PremierContractor from "./pages/PremierContractor";
 import Pro from "./pages/Pro";
 import Security from "./pages/Security";
 import Support from "./pages/Support";
-import PageNotFound from "./pages/PageNotFound";
+import Services from "./pages/Services";
+// import QbsRoute from "./pages/QbsROute";
+
+
+// furthre menu //
+import ContactUs from './pages/QBSpages/ContactUs.jsx'
+import RefundPolicy from './pages/QBSpages/RefundPolicy.jsx'
+import PrivacyPolicy from './pages/QBSpages/PrivacyPolicy.jsx'
+import Authenticity from './pages/QBSpages/Authenticity.jsx'
+import QBScertified from './pages/QBSpages/QBScertified.jsx'
+import Faq from './pages/QBSpages/Faq.jsx'
+import Product from './pages/QBSpages/Product.jsx'
+import Downloads from './pages/QBSpages/Downloads.jsx'
+import SecondAbout from './pages/QBSpages/SecondAbout.jsx' 
+import TermsSecond from "./pages/QBSpages/TermsSecond.jsx";
+
 
 function App() {
+
+  const {pathname} = useLocation()
+  const hideNavbarOn = ["/services", "/authenticity", "/contact-second", "/downloads", "/faqs", "/privacy-policy-second", "/products", "/qbs-certified", "/refund-policy", "/about-second"]
+
   return (
     <>
-      <Navbar />
+          {!hideNavbarOn.includes(pathname) && <Navbar />}
+
       <main className="min-h-screen bg-gray-50">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<PageNotFound />} />
+          {/* <Route path="*" element={<PageNotFound />} /> */}
           <Route path="/about-us" element={<About />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/terms-and-conditions" element={<Terms />} />
           <Route path="/privacy-policy" element={<Privacy />} />
@@ -41,9 +63,27 @@ function App() {
           <Route path="/our-partner" element={<Partner />} />
           <Route path="/our-security" element={<Security />} />
           <Route path="/contact-support" element={<Support />} />
+          
+
+{/* further menu */}
+
+<Route path='/contact-us-second' element={<ContactUs/>}/>
+      <Route path='/about-second'element={<SecondAbout/>}/>
+      <Route path='/refund-policy' element={<RefundPolicy/>}/>
+      <Route path='/terms-conditions' element={<TermsSecond/>}/>
+      <Route path='/privacy-policy-second' element={<PrivacyPolicy/>}/>
+      <Route path='/authenticity' element={<Authenticity/>} />
+      <Route path='/qbs-certified' element={<QBScertified/>} />
+      <Route path='/faqs' element={<Faq/>}/>
+      <Route path='/product' element={<Product/>}/>
+      <Route path='/downloads' element={<Downloads/>}/>
+
+
         </Routes>
       </main>
-      <Footer />
+      {/* {!hideFooterOn.includes(pathname) && <Footer/>} */}
+
+
     </>
   );
 }

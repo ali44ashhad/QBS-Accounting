@@ -87,6 +87,14 @@ const Navbar = () => {
               About Us
             </Link>
 
+             {/* <Link
+              to="/services"
+              className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+            >
+             services
+            </Link> */}
+
+             
             <Link
               to="/contact-us"
               className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"

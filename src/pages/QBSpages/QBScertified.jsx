@@ -5,6 +5,7 @@ import images from '../../assets/images';
 import SecondNavbar from '../../components/SecondNavbar';
 import SecondFooter from '../../components/SecondFooter';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom'
 
 const QBScertified = () => {
   const primaryGreen = 'bg-green-700 hover:bg-green-800';

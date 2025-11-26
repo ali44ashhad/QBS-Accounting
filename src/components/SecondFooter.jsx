@@ -130,10 +130,7 @@ const SecondFooter = ({ paymentImg, social = {}, className = "" }) => {
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 border-t pt-4">
           <div className="text-sm text-gray-600">
             © {new Date().getFullYear()} QBS Solution INC. All rights reserved.
-            <span className="mx-2">•</span>
-            <a href="#" className="hover:text-green-600">Sitemap</a>
-            <span className="mx-2">•</span>
-            <a href="#" className="hover:text-green-600">Terms</a>
+           
           </div>
 
           <div className="flex items-center gap-3">

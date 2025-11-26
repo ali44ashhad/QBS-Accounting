@@ -2,7 +2,7 @@ import React from 'react'
 import { refundData} from '../../data/data'
 import SecondNavbar from '../../components/SecondNavbar'
 import SecondFooter from '../../components/SecondFooter'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const RefundPolicy = () => {
   return (

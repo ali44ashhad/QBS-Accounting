@@ -1,7 +1,7 @@
 import React from 'react';
 import SecondFooter from '../../components/SecondFooter';
 import SecondNavbar from '../../components/SecondNavbar';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const ContactUsForm = () => {
   const handleSubmit = (e) => {
@@ -82,8 +82,8 @@ const ContactUsForm = () => {
               <span className="mr-3 text-lg">📍</span> {/* Location Icon */}
               <div>
                 <p className="font-semibold text-gray-300">Head Office:</p>
-                <p className="text-gray-400">43 Sweet Gale Cres, Richmond Hill, ON,</p>
-                <p className="text-gray-400">L4E1K1 Canada</p>
+                <p className="text-gray-400">30 N Gould St Ste</p>
+                <p className="text-gray-400">R. Sheridan, WY 82801</p>
               </div>
             </div>
 
@@ -93,7 +93,7 @@ const ContactUsForm = () => {
               <div>
                 <p className="font-semibold text-gray-300">Office Phone:</p>
                 <a href="tel:+18442823673" className="text-green-500 hover:text-green-400 transition-colors">
-                  +1 (844) 282-3673
+                  1-888-339-8581
                 </a>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import { policySections } from '../../data/data.js'
 import SecondNavbar from '../../components/SecondNavbar.jsx'
 import SecondFooter from '../../components/SecondFooter.jsx'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const PrivacyPolicy = () => {
   return (

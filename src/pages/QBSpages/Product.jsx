@@ -3,7 +3,7 @@ import { productData } from '../../data/data';
 import { Link } from 'react-router-dom'
 import SecondFooter from '../../components/SecondFooter';
 import SecondNavbar from '../../components/SecondNavbar';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 const Product = () => {

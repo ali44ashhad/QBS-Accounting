@@ -1,5 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import { useLocation } from 'react-router-dom'
+import useFavicon from "./hooks/useFavicon.js";
+
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -34,16 +37,19 @@ import TermsSecond from "./pages/QBSpages/TermsSecond.jsx";
 
 
 function App() {
+  useFavicon()
 
   const {pathname} = useLocation()
-  const hideNavbarOn = ["/services", "/authenticity", "/contact-us-second", "/downloads", "/faqs", "/privacy-policy-second", "/product", "terms-conditions", "/qbs-certified", "/refund-policy", "/about-second"]
-  const hideFooterOn = ["/services", "/authenticity", "/contact-us-second", "/downloads", "/faqs", "/privacy-policy-second", "/product", "terms-conditions", "/qbs-certified", "/refund-policy", "/about-second"]
+  const hideNavbarOn = ["/services", "/authenticity", "/contact-us-second", "/downloads", "/faqs", "/privacy-policy-second", "/product", "/terms-conditions", "/qbs-certified", "/refund-policy", "/about-second"]
+  const hideFooterOn = ["/services", "/authenticity", "/contact-us-second", "/downloads", "/faqs", "/privacy-policy-second", "/product", "/terms-conditions", "/qbs-certified", "/refund-policy", "/about-second"]
 
   return (
     <>
+  
           {!hideNavbarOn.includes(pathname) && <Navbar />}
 
       <main className="min-h-screen bg-gray-50">
+
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="*" element={<PageNotFound />} /> */}
@@ -58,7 +64,7 @@ function App() {
           <Route
             path="/quickbooks-premier-contractor"
             element={<PremierContractor />}
-          />
+          />    
           <Route path="/quickbooks-premier" element={<Premier />} />
           <Route path="/quickbooks-pos" element={<POS />} />
           <Route path="/our-partner" element={<Partner />} />

@@ -3,7 +3,7 @@ import { faqData } from '../../data/data';
 import { ChevronsDown } from "lucide-react";
 import SecondFooter from '../../components/SecondFooter';
 import SecondNavbar from '../../components/SecondNavbar';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 const Faq = () => {
 

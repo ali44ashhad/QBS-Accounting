@@ -1,7 +1,7 @@
 import React from 'react'
 import SecondFooter from '../../components/SecondFooter'
 import SecondNavbar from '../../components/SecondNavbar'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 
 const Authenticity = () => {
@@ -9,6 +9,7 @@ const Authenticity = () => {
    <>
 
     <Helmet>
+         <link rel="icon" type="image/svg+xml" href="react.svg" />
                 <title>Authenticity | QuickBooks Solutions</title>
                 <meta
                     name="description"

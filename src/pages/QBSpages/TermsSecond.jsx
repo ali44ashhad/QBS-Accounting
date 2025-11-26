@@ -2,7 +2,7 @@ import React from 'react'
 import { termsSections } from '../../data/data'
 import SecondFooter from '../../components/SecondFooter'
 import SecondNavbar from '../../components/SecondNavbar'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 const TermsSecond = () => {
   return (

@@ -10,12 +10,14 @@ export default function useFavicon() {
   const iconMap = {
     "/services": "/qbssolutions.png",
     "/about-second": "/qbssolutions.png",
-    "/contact": "/contact-icon.png",
+    "/contact-us-second": "/qbssolutions.png",
+    "product": "/qbssolutions.png",
     "/privacy-policy-second": "/qbssolutions.png",
     "/refund-policy": "/qbssolutions.png",
     "/faq": "/qbssolutions.png",
     "/downloads": "/qbssolutions.png",
-    "/authenticity": "/qbssolutions.png"
+    "/authenticity": "/qbssolutions.png",
+    "terms-conditions": "/qbssolutions.png"
   };
 
   useEffect(() => {

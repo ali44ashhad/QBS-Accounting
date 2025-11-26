@@ -3,12 +3,19 @@ import { Download, Star } from 'lucide-react';
 import images from '../../assets/images';
 import SecondNavbar from '../../components/SecondNavbar';
 import SecondFooter from '../../components/SecondFooter';
-
+import { Helmet } from 'react-helmet';
 
 const Downloads = () => {
   return (
 
     <>
+      <Helmet>
+                <title>Downloads | QuickBooks Solutions</title>
+                <meta
+                    name="description"
+                    content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                />
+            </Helmet>
       <SecondNavbar />
       <div className="relative overflow-hidden pb-12 pt-20">
 

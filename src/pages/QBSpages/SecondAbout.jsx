@@ -2,10 +2,18 @@ import React from 'react';
 import images from '../../assets/images';
 import SecondNavbar from '../../components/SecondNavbar';
 import SecondFooter from '../../components/SecondFooter';
+import { Helmet } from 'react-helmet';
 
 const SecondAbout = () => {
   return (
     <>
+      <Helmet>
+                    <title>About | QuickBooks Solutions</title>
+                    <meta
+                        name="description"
+                        content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                    />
+                </Helmet>
     <SecondNavbar/>
       <section className="bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-30 sm:py-12 lg:py-24">

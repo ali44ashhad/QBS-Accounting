@@ -1,6 +1,7 @@
 import React from 'react';
 import SecondFooter from '../../components/SecondFooter';
 import SecondNavbar from '../../components/SecondNavbar';
+import { Helmet } from 'react-helmet';
 
 const ContactUsForm = () => {
   const handleSubmit = (e) => {
@@ -10,6 +11,13 @@ const ContactUsForm = () => {
 
   return (
   <>
+  <Helmet>
+                <title>Contact | QuickBooks Solutions</title>
+                <meta
+                    name="description"
+                    content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                />
+            </Helmet>
   <SecondNavbar/>
       <div className="bg-[#1e1e1e] py-30 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">

@@ -1,10 +1,20 @@
 import React from 'react'
 import SecondFooter from '../../components/SecondFooter'
 import SecondNavbar from '../../components/SecondNavbar'
+import { Helmet } from 'react-helmet'
+
 
 const Authenticity = () => {
   return (
    <>
+
+    <Helmet>
+                <title>Authenticity | QuickBooks Solutions</title>
+                <meta
+                    name="description"
+                    // content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                />
+            </Helmet>
    <SecondNavbar/>
      <div>
 

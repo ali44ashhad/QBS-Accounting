@@ -2,10 +2,18 @@ import React from 'react'
 import { termsSections } from '../../data/data'
 import SecondFooter from '../../components/SecondFooter'
 import SecondNavbar from '../../components/SecondNavbar'
+import { Helmet } from 'react-helmet'
 
 const TermsSecond = () => {
   return (
    <>
+     <Helmet>
+                <title>Terms and Conditions | QuickBooks Solutions</title>
+                <meta
+                    name="description"
+                    content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                />
+            </Helmet>
    <SecondNavbar/>
      <div>
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 pt-20">

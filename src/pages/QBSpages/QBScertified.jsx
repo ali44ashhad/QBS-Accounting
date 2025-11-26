@@ -4,12 +4,20 @@ import { qbsBusinessData, qbsBusinessSuccessData } from '../../data/data';
 import images from '../../assets/images';
 import SecondNavbar from '../../components/SecondNavbar';
 import SecondFooter from '../../components/SecondFooter';
+import { Helmet } from 'react-helmet';
 
 const QBScertified = () => {
   const primaryGreen = 'bg-green-700 hover:bg-green-800';
 
   return (
     <>
+      <Helmet>
+                    <title>QBS certified | QuickBooks Solutions</title>
+                    <meta
+                        name="description"
+                        content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                    />
+                </Helmet>
     <SecondNavbar/>
       {/* PAGE WRAPPER */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 font-sans">

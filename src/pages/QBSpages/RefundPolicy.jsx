@@ -2,10 +2,18 @@ import React from 'react'
 import { refundData} from '../../data/data'
 import SecondNavbar from '../../components/SecondNavbar'
 import SecondFooter from '../../components/SecondFooter'
+import { Helmet } from 'react-helmet'
 
 const RefundPolicy = () => {
   return (
  <>
+   <Helmet>
+                 <title>Refund Policy | QuickBooks Solutions</title>
+                 <meta
+                     name="description"
+                     content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                 />
+             </Helmet>
  <SecondNavbar/>
      <div>
         <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 pt-30">

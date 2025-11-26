@@ -2,10 +2,18 @@ import React from 'react'
 import { policySections } from '../../data/data.js'
 import SecondNavbar from '../../components/SecondNavbar.jsx'
 import SecondFooter from '../../components/SecondFooter.jsx'
+import { Helmet } from 'react-helmet'
 
 const PrivacyPolicy = () => {
   return (
    <>
+     <Helmet>
+                <title>Privacy policy | QuickBooks Solutions</title>
+                <meta
+                    name="description"
+                    content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                />
+            </Helmet>
    <SecondNavbar/>
      <div>
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 pt-20">

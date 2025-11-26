@@ -3,6 +3,7 @@ import { faqData } from '../../data/data';
 import { ChevronsDown } from "lucide-react";
 import SecondFooter from '../../components/SecondFooter';
 import SecondNavbar from '../../components/SecondNavbar';
+import { Helmet } from 'react-helmet';
 
 const Faq = () => {
 
@@ -14,6 +15,13 @@ const Faq = () => {
     
   return (
     <>
+      <Helmet>
+                <title>Faq | QuickBooks Solutions</title>
+                <meta
+                    name="description"
+                    content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                />
+            </Helmet>
     <SecondNavbar/>
       <div>
            <section className="py-30 px-4 md:px-8 lg:px-12">

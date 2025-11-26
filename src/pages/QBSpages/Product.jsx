@@ -3,11 +3,19 @@ import { productData } from '../../data/data';
 import { Link } from 'react-router-dom'
 import SecondFooter from '../../components/SecondFooter';
 import SecondNavbar from '../../components/SecondNavbar';
+import { Helmet } from 'react-helmet';
 
 
 const Product = () => {
   return (
     <>
+      <Helmet>
+                    <title>Products | QuickBooks Solutions</title>
+                    <meta
+                        name="description"
+                        content="Read ISHEP Foundation's Anti-Discrimination Policy detailing equality, inclusion, and fairness."
+                    />
+                </Helmet>
     <SecondNavbar/>
       <div>
           {/* Product Grid */}

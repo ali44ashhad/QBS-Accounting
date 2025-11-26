@@ -54,7 +54,7 @@ const Product = () => {
                           </div>
         
                           {/* Add to Cart Button */}
-                       <Link to='/contact-us'>
+                       <Link to='/contact-us-second'>
                                <button
                             type="button"
                             className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 w-full transition duration-150 rounded"

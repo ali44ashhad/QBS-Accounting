@@ -110,7 +110,7 @@ const HomeFurtherSection = () => {
                   </div>
 
                   {/* Add to Cart Button */}
-               <Link to='/contact-us'>
+               <Link to='/contact-us-second'>
                        <button
                     type="button"
                     className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 w-full transition duration-150 rounded"
@@ -130,12 +130,14 @@ const HomeFurtherSection = () => {
 
           {/* Shop Now Button (Footer) */}
           <div className="text-center mt-10">
+            <Link to='/contact-us-second'>
             <button
               type="button"
               className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-150"
             >
               Shop Now
             </button>
+           </Link>
           </div>
         </div>
       </div>
@@ -172,11 +174,13 @@ const HomeFurtherSection = () => {
                   <span className="text-sm text-gray-500 line-through">{plan.originalPrice}</span>
                   <p className="text-3xl font-bold text-gray-900 leading-none mt-1">{plan.price}</p>
                 </div>
-                <button 
+              <Link to="/contact-us-second">
+                  <button 
                   className={`mt-4 w-full py-2 px-4 text-white font-medium rounded-full transition duration-150 ease-in-out ${plan.buttonColor} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-700`}
                 >
                   Try it free
                 </button>
+              </Link>
               </div>
 
               {/* Plan Features */}
@@ -237,12 +241,12 @@ const HomeFurtherSection = () => {
   </p>
 
   {/* Button */}
-  <a
-    href="#"
+  <Link 
+    to="/contact-us-second"
     className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg inline-block transition-colors duration-300"
   >
     Try QuickBooks Now
-  </a>
+  </Link>
 </div>
 </section>
 

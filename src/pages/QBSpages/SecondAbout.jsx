@@ -45,7 +45,7 @@ const SecondAbout = () => {
             </p>
 
             <p className="text-gray-600 leading-relaxed">
-              QBO Solution <a href="https://www.qbosolution.ca" className="text-emerald-700 hover:underline">www.qbosolution.ca</a> provides <strong>excellent pricing and support</strong> for QuickBooks users. Our network of partners can help you with all of your accounting services &amp; software needs.
+              QBS Accounting <a href="https://qbsaccounting.us" className="text-emerald-700 hover:underline">www.qbsaccounting.us/</a> provides <strong>excellent pricing and support</strong> for QuickBooks users. Our network of partners can help you with all of your accounting services &amp; software needs.
             </p>
           </div>
 

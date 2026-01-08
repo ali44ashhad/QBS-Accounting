@@ -75,7 +75,7 @@ const ContactUsForm = () => {
 
           {/* RIGHT SIDE: Contact Information */}
           <div className="text-white lg:pl-12">
-            <h3 className="text-2xl font-bold mb-6">QBS Solution INC</h3>
+            <h3 className="text-2xl font-bold mb-6">QBS Accounting LLC</h3>
             
             {/* Head Office */}
             <div className="flex items-start mb-4">
@@ -93,7 +93,7 @@ const ContactUsForm = () => {
               <div>
                 <p className="font-semibold text-gray-300">Office Phone:</p>
                 <a href="tel:+18442823673" className="text-green-500 hover:text-green-400 transition-colors">
-                  1-888-339-8581
+                  1-888-654-9781
                 </a>
               </div>
             </div>

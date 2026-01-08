@@ -57,7 +57,7 @@ const Downloads = () => {
                     className="flex items-center justify-center text-white text-2xl font-bold hover:text-green-300 transition-colors"
                   >
                     <Download className="w-5 h-5 mr-3 text-green-400" />
-                     1-888-339-8581
+                     1-888-654-9781
                   </a>
                 </div>
               </div>

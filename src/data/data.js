@@ -304,7 +304,7 @@ export const termsSections = [
   {
     title: "1. Acceptance of Terms",
     content: [
-      "By accessing and using the services provided by **QBO Solution** ('we', 'us', or 'our'), you accept and agree to be bound by the terms and provision of this agreement.",
+      "By accessing and using the services provided by **QBS Accouning** ('we', 'us', or 'our'), you accept and agree to be bound by the terms and provision of this agreement.",
       "If you do not agree to abide by these terms, please do not use our services or access our website."
     ]
   },
@@ -334,14 +334,14 @@ export const termsSections = [
   {
     title: "5. Intellectual Property",
     content: [
-      "All content provided on this website, including text, graphics, logos, and software, is the property of QBO Solution or its content suppliers and is protected by international copyright laws.",
+      "All content provided on this website, including text, graphics, logos, and software, is the property of QBS Accouning or its content suppliers and is protected by international copyright laws.",
       "You may not reproduce, duplicate, copy, sell, resell, or exploit any portion of the Service without express written permission by us."
     ]
   },
   {
     title: "6. Limitation of Liability",
     content: [
-      "In no event shall QBO Solution be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use our services.",
+      "In no event shall QBS Accouning be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use our services.",
       "Our total liability for any claim arising out of or relating to these terms or our services shall not exceed the amount paid by you for the specific service giving rise to the claim."
     ]
   },

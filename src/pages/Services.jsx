@@ -43,7 +43,7 @@ const Services = () => {
               className="inline-flex items-center justify-center gap-3 bg-[#0b6b3b] hover:bg-green-700 transition-all duration-300 text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg"
             >
               <Phone className="h-5 w-5" />
-              Talk to a specialist: 1-888-339-8581
+              Talk to a specialist: 1-888-654-9781
             </Link>
           </div>
         </section>
@@ -63,7 +63,7 @@ const Services = () => {
           <h2 className="text-2xl lg:text-3xl font-bold mb-4">Troubleshooting or data recovery?</h2>
           <p className="text-gray-700 mb-6">Our certified advisors recover files, fix sync issues, and secure your books quickly.</p>
           <Link to="/contact-us-second" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg inline-block transition-colors duration-300">
-            📞 Support: 1-888-339-8581
+            📞 Support: 1-888-654-9781
           </Link>
         </div>
 
@@ -95,7 +95,7 @@ const Services = () => {
 
             <Link to="/contact-us-second" className="inline-flex items-center justify-center bg-green-700 hover:bg-green-600 transition-colors text-white text-lg font-bold py-3 px-6 rounded-full self-center lg:self-start max-w-xs w-full sm:w-auto">
               <Phone className="mr-3 h-5 w-5" />
-              Call: 1-888-339-8581
+              Call: 1-888-654-9781
             </Link>
           </div>
         </div>

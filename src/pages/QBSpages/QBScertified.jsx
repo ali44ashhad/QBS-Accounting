@@ -52,7 +52,7 @@ const QBScertified = () => {
               to="/contact-us-second"
               className={`inline-block py-2 px-6 text-white font-bold rounded-md transition duration-300 shadow ${primaryGreen}`}
             >
-              Call: 1-888-339-8581
+              Call: 1-888-654-9781
             </Link>
           </div>
         </section>
@@ -76,7 +76,7 @@ const QBScertified = () => {
               to="/contact-us-second"
               className={`inline-block py-2 px-6 text-white font-bold rounded-md transition duration-300 shadow ${primaryGreen}`}
             >
-              Call: 1-888-339-8581
+              Call: 1-888-654-9781
             </Link>
           </div>
 
@@ -111,7 +111,7 @@ const QBScertified = () => {
               className="inline-flex items-center justify-center px-6 py-2 text-base font-bold rounded-full shadow bg-green-700 hover:bg-green-800 transition duration-300 ring-4 ring-green-600/40"
             >
               <Phone className="w-4 h-4 mr-2" />
-              Call: 1-888-339-8581
+              Call: 1-888-654-9781
             </Link>
           </div>
         </section>
@@ -146,7 +146,7 @@ const QBScertified = () => {
                   to="/contact-us-second"
                   className="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2 text-base font-bold rounded-full shadow bg-green-700 hover:bg-green-800 transition duration-300"
                 >
-                  Call: 1-888-339-8581
+                  Call: 1-888-654-9781
                 </Link>
               </div>
             </div>
@@ -191,7 +191,7 @@ const QBScertified = () => {
               to="/contact-us-second"
               className="inline-block px-6 py-3 text-base font-semibold text-white bg-emerald-700 hover:bg-emerald-800 rounded-lg shadow transition duration-300"
             >
-              Call: 1-888-339-8581
+              Call: 1-888-654-9781
             </Link>
           </div>
         </div>
@@ -240,7 +240,7 @@ const QBScertified = () => {
               to="/contact-us-second"
               className="inline-block px-6 py-3 text-base font-semibold text-white bg-emerald-700 hover:bg-emerald-800 rounded-lg shadow transition duration-300"
             >
-              Call: 1-888-339-8581
+              Call: 1-888-654-9781
             </Link>
           </div>
         </div>

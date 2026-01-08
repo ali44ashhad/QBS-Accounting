@@ -33,7 +33,7 @@ const SecondNavbar = () => {
       select-none
     "
   >
-    1-888-339-8581
+    1-888-654-9781
   </h1>
 </div>
 

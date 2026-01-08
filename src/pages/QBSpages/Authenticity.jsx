@@ -31,15 +31,8 @@ const Authenticity = () => {
           Data Retrieval
         </h3>
         <p className="text-gray-600 leading-relaxed mb-4">
-          All user data is securely managed by our central API service. If you lose access credentials and have a verified account, you can always recover your information online. Visit your <a 
-          href="#" 
-          className="text-blue-600 hover:text-blue-800 underline transition duration-150 ease-in-out"
-          >
-          account credentials dashboard</a> to reset your password and retrieve your API key. If you haven't verified your account, use the <a 
-          href="#" 
-          className="text-blue-600 hover:text-blue-800 underline transition duration-150 ease-in-out"
-          >
-          Key Recovery Tool</a>.
+          All user data is securely managed by our central API service. If you lose access credentials and have a verified account, you can always recover your information online. Visit your account credentials dashboard
+           to reset your password and retrieve your API key. If you haven't verified your account, use the  Key Recovery Tool
         </p>
       </div>
 
@@ -56,15 +49,13 @@ const Authenticity = () => {
           href="#" 
           className="text-blue-600 hover:text-blue-800 underline transition duration-150 ease-in-out"
           >
-          officialpartners.com</a> are fully supported by our Dev Support Team. Please note that **priority support** is available for **Platinum** and **Gold** tier subscriptions. Other plans come with standard support (mostly deployment-related issues). Advanced support can be secured by upgrading to an Enterprise subscription.
+         www.qbsaccounting.us</a> are fully supported by our Dev Support Team. Please note that <b>priority support</b> is available for **Platinum** and **Gold** tier subscriptions. Other plans come with standard support (mostly deployment-related issues). Advanced support can be secured by upgrading to an Enterprise subscription
         </p>
         <p className="text-gray-600 leading-relaxed">
-          You can also request more information by emailing us at 
-          <a 
+          You can also request more information by emailing us at <a 
           href="mailto:support@techsolution.dev" 
           className="text-blue-600 hover:text-blue-800 underline transition duration-150 ease-in-out"
-          >
-          support@techsolution.dev</a>
+          > info@qbsaccounting.us</a>
         </p>
       </div>
     </div>

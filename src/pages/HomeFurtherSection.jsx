@@ -44,7 +44,7 @@ const HomeFurtherSection = () => {
             <div className="flex items-center text-lg font-bold">
               <Phone className="w-5 h-5 mr-2" aria-hidden />
               <a href="tel:+19442820673" className="underline">
-                Call Us: 1-888-339-8581
+                Call Us: 1-888-654-9781
               </a>
             </div>
           </div>
@@ -154,7 +154,7 @@ const HomeFurtherSection = () => {
             Find a plan that's right for you
           </h1>
           <p className="mt-3 text-lg text-gray-600">
-            Enjoy upto **40% off** for your first 3 months.*
+            Enjoy upto <b>40% off</b> for your first 3 months.*
           </p>
         </div>
 

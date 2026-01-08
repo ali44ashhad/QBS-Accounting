@@ -53,9 +53,9 @@ const SecondFooter = ({ paymentImg, social = {}, className = "" }) => {
             <div className="flex items-start gap-4">
              
               <div>
-                <h3 className="text-lg font-semibold text-green-600">QBS Solution INC</h3>
+                <h3 className="text-lg font-semibold text-green-600">QBS Accounting LLC</h3>
                 <p className="text-sm text-gray-600 mt-2">
-                  <strong>Disclaimer:</strong> QBS Solution is an independent accounting firm &amp; Certified QuickBooks Pro-Advisor.
+                  <strong>Disclaimer:</strong> QBS Accounting LLC is an independent accounting firm &amp; Certified QuickBooks Pro-Advisor.
                   We are a retailer for Intuit QuickBooks products. Licenses are issued by Intuit. We are not Intuit Inc.
                 </p>
 
@@ -105,7 +105,7 @@ const SecondFooter = ({ paymentImg, social = {}, className = "" }) => {
             <img src={images.QBScertificate2} alt="img2" className="h-30 w-30"/>
           </div>
             <h4 className="text-md font-semibold mb-3">Contact Us</h4>
-            <p className="text-sm text-gray-700 mb-1">Phone: <a className="font-medium text-gray-900" href="tel:+18664911570">1-888-339-8581</a></p>
+            <p className="text-sm text-gray-700 mb-1">Phone: <a className="font-medium text-gray-900" href="tel:+18664911570">1-888-654-9781</a></p>
             <p className="text-sm text-gray-700 mb-3">Email: <a className="text-gray-900" href="mailto:info@qbosolution.ca">info@qbsaccounting.us</a></p>
 
             <div className="flex items-center gap-3 mb-4">
@@ -129,7 +129,7 @@ const SecondFooter = ({ paymentImg, social = {}, className = "" }) => {
         {/* Bottom row: legal / back-to-top */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 border-t pt-4">
           <div className="text-sm text-gray-600">
-            © {new Date().getFullYear()} QBS Solution INC. All rights reserved.
+            © {new Date().getFullYear()} QBS Accounting LLC. All rights reserved.
            
           </div>
 
@@ -142,7 +142,7 @@ const SecondFooter = ({ paymentImg, social = {}, className = "" }) => {
               Back to top
             </button>
 
-            <div className="text-sm text-gray-500">Powered by QuickBooks Solution INC</div>
+            <div className="text-sm text-gray-500">Powered by QuickBooks Solution</div>
           </div>
         </div>
       </div>
